@@ -5,7 +5,6 @@ const connection = require("../connection");
 const articleRouter = require("../routes/articles");
 const methodOverride = require("method-override");
 const path = require("path");
-const truncate = require("truncate");
 const app = express();
 
 const port = process.env.PORT || 5000;
@@ -13,7 +12,7 @@ const port = process.env.PORT || 5000;
 const { MongoClient, ServerApiVersion } = require("mongodb");
 
 MONGODB_URI =
-  "mongodb+srv://eddie:jamestown@cluster0.swuan.mongodb.net/articles?retryWrites=true&w=majority";
+  "mongodb+srv://eddie:jamestown@cluster0.swuan.mongodb.net/test?retryWrites=true&w=majority";
 
 const uri = process.env.MONGODB_URI;
 
