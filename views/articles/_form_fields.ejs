@@ -1,0 +1,42 @@
+<div class="form-group">
+  <label for="title">Title</label>
+  <input
+    required
+    value="<%= article.title %>"
+    type="text"
+    name="title"
+    id="title"
+    class="form-control"
+  />
+</div>
+<div class="form-group">
+  <label for="subtitle">Subtitle</label>
+  <input
+    required
+    value="<%= article.subtitle %>"
+    type="text"
+    name="subtitle"
+    id="subtitle"
+    class="form-control"
+  />
+</div>
+<div class="form-group">
+  <label for="image">Image</label>
+  <input
+    required
+    value="<%= article.image %>"
+    type="text"
+    name="image"
+    id="image"
+    class="form-control"
+  />
+</div>
+<div class="form-group">
+  <label for="content">Content</label>
+  <textarea rows="5" required name="content" id="content" class="form-control">
+<%= article.content %></textarea
+  >
+</div>
+
+<a href="/" class="btn btn-secondary">Cancel</a>
+<button type="submit" class="btn btn-primary">Save</button>

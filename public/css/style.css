@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1rem;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Ubuntu Mono", monospace;
+  line-height: 1.25;
+  font-weight: 400;
+  color: #2d3436;
+}
+
+.index-byline {
+  font-size: 0.75rem;
+  font-style: italic;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+nav {
+  background-color: #ecf0f1;
+}
+
+.navbar-title {
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 3rem;
+  text-decoration: none;
+  color: #e74c3c;
+  letter-spacing: 0.25rem;
+}
+
+.form-container {
+  max-width: 600px;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.edit-page-title {
+  margin-left: 0.25rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 25em) {
+  a.navbar-title {
+    font-size: 1rem;
+  }
+  a.index-card-title {
+    font-size: 1.5rem;
+  }
+  .blogpost-card-body-text {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 28.9em) {
+  a.navbar-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 38.25em) {
+  a.index-card-title {
+    font-size: 2rem;
+  }
+  .index-card-text {
+    font-size: 1rem;
+  }
+  img.img-fluid {
+    width: 100%;
+  }
+  .navbar-title {
+    font-size: 2rem;
+  }
+  .blog-post-card {
+    max-width: 600px;
+    width: 100%;
+  }
+  .blogpost-title {
+    font-size: 2rem;
+  }
+  .blogpost-subtitle {
+    font-size: 1.25rem;
+  }
+  .blogpost-card-body-text {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .blog-post-card {
+    width: 600px;
+  }
+}
+
+h5.index-card-title {
+  margin-top: 10px;
+}
+
+.navbar-nav,
+.admin-navbar-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.admin-navbar-nav {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  list-style: none;
+}
+
+li.nav-item {
+  padding-right: 0.75rem;
+}
+
+.index-card {
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+  padding: 1rem;
+}
+
+.index-card-body {
+  margin-bottom: -0.75rem;
+}
+
+.index-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+p.index-card-text {
+  width: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+}
+h5.index-card-title {
+  width: 100;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.field {
+  padding-left: 1.25rem;
+}
+
+.login-card,
+.profile-card {
+  max-width: 500px;
+  width: 75vw;
+}
+
+.alert {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 0;
+}
+
+.profile-container {
+  min-height: 50vh;
+}
+
+.profile-link {
+  margin-top: 2rem;
+}
+
+#blogpost-homelink {
+  margin-right: 0.75rem;
+}
+
+#img-max {
+  margin-top: -0.5rem;
+}
+
+.form-control {
+  color: red;
+}
+
+.blogpost-card-body-text {
+  margin-top: 10px;
+}
