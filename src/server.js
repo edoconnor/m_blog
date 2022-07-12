@@ -5,6 +5,7 @@ const articleRouter = require("../routes/articles");
 const methodOverride = require("method-override");
 require("dotenv").config();
 const path = require("path");
+
 const app = express();
 
 const { MongoClient, ServerApiVersion } = require("mongodb");
@@ -34,7 +35,3 @@ app.get("/", async (req, res) => {
 });
 
 app.use("/articles", articleRouter);
-
-app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}`);
-});
