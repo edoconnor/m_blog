@@ -13,7 +13,7 @@ const port = process.env.PORT || 5000;
 const { MongoClient, ServerApiVersion } = require("mongodb");
 
 MONGODB_URI =
-  "mongodb+srv://eddie:jamestown@cluster0.swuan.mongodb.net/test?retryWrites=true&w=majority";
+  "mongodb+srv://eddie:jamestown@cluster0.swuan.mongodb.net/articles?retryWrites=true&w=majority";
 
 const uri = process.env.MONGODB_URI;
 
