@@ -17,8 +17,9 @@ const client = new MongoClient(uri, {
   useUnifiedTopology: true,
   serverApi: ServerApiVersion.v1,
 });
+
 client.connect((err) => {
-  const collection = client.db("test").collection("devices");
+  const collection = client.db("test").collection("articles");
   // perform actions on the collection object
   client.close();
 });
@@ -35,7 +36,3 @@ app.get("/", async (req, res) => {
 });
 
 app.use("/articles", articleRouter);
-
-app.use("/", routes);
-
-app.listen(port, () => console.log(`Server is listening on port ${port}`));
