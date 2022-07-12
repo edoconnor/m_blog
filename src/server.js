@@ -1,6 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const connection = require("./src/connection");
+const connection = require("./src/connection.js");
 const Article = require("../models/article");
 const articleRouter = require("../routes/articles");
 const methodOverride = require("method-override");
