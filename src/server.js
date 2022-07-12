@@ -1,7 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const Article = require("../models/article");
-const connection = require("../connection");
 const articleRouter = require("../routes/articles");
 const methodOverride = require("method-override");
 const path = require("path");
@@ -15,11 +14,6 @@ MONGODB_URI =
   "mongodb+srv://eddie:jamestown@cluster0.swuan.mongodb.net/test?retryWrites=true&w=majority";
 
 const uri = process.env.MONGODB_URI;
-
-// =============> MONGODB DEV Connection:
-
-// const uri = "mongodb+srv://eddie:jamestown@cluster0.swuan.mongodb.net/?retryWrites=true&w=majority";
-// const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 
 app.set("view engine", "ejs");
 
