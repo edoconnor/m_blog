@@ -35,3 +35,7 @@ app.get("/", async (req, res) => {
 });
 
 app.use("/articles", articleRouter);
+
+app.use("/", routes);
+
+app.listen(port, () => console.log(`Server is listening on port ${port}`));
