@@ -7,14 +7,20 @@ require("dotenv").config();
 const path = require("path");
 const app = express();
 
-const port = process.env.PORT || 5000;
-
 const { MongoClient, ServerApiVersion } = require("mongodb");
 
-MONGODB_URI =
-  "mongodb+srv://eddie:jamestown@cluster0.swuan.mongodb.net/test?retryWrites=true&w=majority";
-
 const uri = process.env.MONGODB_URI;
+
+const client = new MongoClient(uri, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  serverApi: ServerApiVersion.v1,
+});
+client.connect((err) => {
+  const collection = client.db("test").collection("devices");
+  // perform actions on the collection object
+  client.close();
+});
 
 app.set("view engine", "ejs");
 
