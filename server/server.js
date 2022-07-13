@@ -3,8 +3,8 @@ const mongoose = require("mongoose");
 const Article = require("../models/article");
 const articleRouter = require("../routes/articles");
 const methodOverride = require("method-override");
-require("dotenv").config();
-const path = require("path");
+const dotenv = require('dotenv');
+dotenv.config({ path: './config.env' });
 
 const app = express();
 
